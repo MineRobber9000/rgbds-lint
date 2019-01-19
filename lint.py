@@ -28,5 +28,5 @@ if __name__=="__main__":
 	end = util.walkup(lines,func_dec+1,Keys.combine("FUNCTION_DECLARATION","IGNORE_LINE"))
 	if end is None:
 		end = -1
-	print("Code:",lines[func_dec:end])
+	print("Code:",lines[func_dec:])
 	print("Ignores:",re.match(Keys.IGNORE_LINE,lines[ignore_line]).group(1).split(", "))
